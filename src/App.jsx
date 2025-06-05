@@ -10,6 +10,9 @@ import Checkout from './components/user/Checkout';
 import Orders from './components/user/Orders';
 import AdminDashboard from './components/admin/AdminDashboard';
 import CategoriesAdmin from './components/admin/CategoriesAdmin';
+import OrdersAdmin from './components/admin/OrdersAdmin';
+import ProductsAdmin from './components/admin/ProductsAdmin';
+import UsersAdmin from './components/admin/UsersAdmin';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -33,9 +36,9 @@ function Layout() {
             <Route path="/register" element={<Register />} />
             <Route path="/admin" element={<AdminDashboard />} />
             <Route path="/admin/categories" element={<CategoriesAdmin />} />
-            <Route path="/admin/products" element={<div className="p-4">Products Admin (TBD)</div>} />
-            <Route path="/admin/orders" element={<div className="p-4">Orders Admin (TBD)</div>} />
-            <Route path="/admin/users" element={<div className="p-4">Users Admin (TBD)</div>} />
+            <Route path="/admin/orders" element={<OrdersAdmin />} />
+            <Route path="/admin/products" element={<ProductsAdmin />} />
+            <Route path="/admin/users" element={<UsersAdmin />} />
           </Routes>
         </main>
       </div>
