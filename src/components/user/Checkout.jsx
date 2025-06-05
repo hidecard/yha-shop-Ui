@@ -11,7 +11,6 @@ function CheckoutForm() {
   const [error, setError] = useState(null);
   const [processing, setProcessing] = useState(false);
 
-  // Mock cart data
   const mockCart = {
     items: [
       { productId: { _id: '1', name: 'Product 1', price: 29.99 }, quantity: 2 },
@@ -29,19 +28,16 @@ function CheckoutForm() {
     setProcessing(true);
     setError(null);
 
-    // Client-side validation
     if (!shippingInfo.address || !shippingInfo.city || !shippingInfo.postalCode || !shippingInfo.country) {
       setError('Please fill in all shipping information fields');
       setProcessing(false);
       return;
     }
 
-    // Simulate successful order placement
     setTimeout(() => {
       alert('Order placed successfully!');
       setProcessing(false);
       setShippingInfo({ address: '', city: '', postalCode: '', country: '' });
-      // Simulate navigation to orders page
       document.location.href = '/orders';
     }, 1000);
   };
