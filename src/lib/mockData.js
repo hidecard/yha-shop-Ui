@@ -11,7 +11,7 @@ export const mockProducts = [
     price: 29.99,
     stock: 10,
     categoryId: mockCategories[0],
-    imageURLs: ['https://via.placeholder.com/150'],
+    imageURLs: ['https://mbg.com.my/cdn/shop/files/India-Thompson-Grape-500GPack-Grapes_1024x1024.jpg?v=1747850118'],
   },
   {
     _id: 'prod2',
@@ -20,7 +20,7 @@ export const mockProducts = [
     price: 49.99,
     stock: 5,
     categoryId: mockCategories[1],
-    imageURLs: ['https://via.placeholder.com/150'],
+    imageURLs: ['https://mbg.com.my/cdn/shop/files/Turkiye-Apricot-350gPack-Stone-Fruits_1024x1024.jpg?v=1748282256'],
   },
 ];
 
