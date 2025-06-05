@@ -67,6 +67,12 @@ function Navbar() {
           >
             Login
           </Link>
+            <Link
+              to="/admin"
+              className="px-4 py-2 text-white transition-colors bg-orange-500 rounded-lg hover:bg-orange-600"
+            >
+              Admin
+            </Link>
           <Link
             to="/register"
             className="block px-4 py-2 text-white transition-all duration-300 bg-orange-500 md:inline-block rounded-xl hover:bg-orange-600"
@@ -74,6 +80,7 @@ function Navbar() {
           >
             Register
           </Link>
+          
         </div>
       </div>
     </nav>
