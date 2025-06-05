@@ -8,7 +8,7 @@ function ProductDetail() {
     name: 'Sample Product',
     price: 29.99,
     stock: 10,
-    imageURLs: ['https://via.placeholder.com/300'],
+    imageURLs: ['https://mbg.com.my/cdn/shop/files/Thailand-Red-Elephant-Tusk-1_5Kg-Exotic-Fruits_1024x1024.jpg?v=1748973333'],
     categoryId: { name: 'Electronics' },
     description: 'A high-quality product.',
     averageRating: 4

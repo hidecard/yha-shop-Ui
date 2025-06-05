@@ -4,9 +4,11 @@ import Cart from './components/Cart';
 import ProductDetail from './components/ProductDetail';
 import Login from './components/Login';
 import Register from './components/Register';
+import Checkout from './components/Checkout';
+import Orders from './components/Orders';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import './index.css';
+
 function App() {
   return (
     <BrowserRouter>
@@ -16,6 +18,8 @@ function App() {
           <div className="space-x-4">
             <Link to="/" className="hover:underline">Home</Link>
             <Link to="/cart" className="hover:underline">Cart</Link>
+            <Link to="/checkout" className="hover:underline">Checkout</Link>
+            <Link to="/orders" className="hover:underline">Orders</Link>
             <Link to="/login" className="hover:underline">Login</Link>
             <Link to="/register" className="hover:underline">Register</Link>
           </div>
@@ -25,6 +29,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/products/:id" element={<ProductDetail />} />
+        <Route path="/checkout" element={<Checkout />} />
+        <Route path="/orders" element={<Orders />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
       </Routes>
